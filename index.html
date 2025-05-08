@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird Hunting Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="frame">
+        <div id="game-container">
+            <div id="scope"></div>
+            <canvas id="game-canvas"></canvas>
+            <div id="main-menu">
+                <img src="extras/man1.png" alt="Background Image" class="man">
+                <img src="extras/bird1.png" alt="Bird Image" class="bird">
+                <h1>Bird Hunting Game</h1>
+                <p>Use your mouse to move the scope and click to shoot the bird. Reload by holding Shift and clicking.</p>
+                <button id="start-game">Start Game</button>
+                <button id="quit-game">Quit Game</button>
+            </div>
+            <div id="hud">
+                <span id="ammo-count">Ammo: 10</span>
+                <span id="score">Score: 0</span>
+                <span id="timer">Time: 60s</span>
+                <span id="reloading" style="display:none;">Reloading...</span>
+            </div>
+            <div id="game-message">Game Message</div>
+            <div id="end-game-popup" class="hidden">
+                <h2>Game Over</h2>
+                <p>Your score: <span id="final-score">0</span></p>
+                <button id="close-popup">Close</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
